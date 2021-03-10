@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+main {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+/* jumbotron */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #a1e8cc;
+  text-align: center;
+  color: #495159;
+}
+
+.jumbotron h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 3em;
+}
+
+/* navbar */
+.container-nav {
+  display: flex;
+  background-color: #fac9b8;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.container-nav .logo a {
+  font-family: 'Oleo Script', cursive;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+nav a {
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #495159;
+  padding: 18px 10px;
+  text-align: center;
+}
+
+nav .nav-right a:hover {
+  background-color: #495159;
+  color: #fac9b8;
+}
+
+/* main */
+
+/* profile */
+#profile {
+  background-color: #e0d4c3;
+  padding-top: 2rem;
+}
+svg {
+  margin-bottom: -5px;
+}
+
+.judul h1 {
+  text-align: center;
+  font-size: 2em;
+}
+.container-profile {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.container-profile .logo img {
+  flex: 2;
+  margin: auto 5px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+.container-profile div.deskripsi {
+  flex: 3;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+/* Product */
+#product {
+  background-color: #f3f4f5;
+  padding-top: 2rem;
+}
+
+.container-product {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #495159;
+  border-radius: 5px;
+  background-color: #a1e8cc;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 3px 3px 5px 2px rgb(83, 76, 76);
+  width: 150px;
+}
+
+.card .header img {
+  height: 150px;
+}
+
+.card .nama-product {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 5px 2px rgb(211, 199, 199);
+  transition: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+/* Contact */
+
+#contact {
+  background-color: #a2d9ff;
+  padding-top: 2rem;
+}
+
+.container-contact {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-evenly;
+}
+
+.container-contact img {
+  width: 70px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.container-contact .wa:hover,
+.fb:hover,
+.ig:hover {
+  transform: scale(1.09);
+  margin-top: -20px;
+  transition: 0.3s;
+  text-shadow: 1px 1px 1px #495159;
+}
+
+.container-contact a {
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.container-contact a p {
+  color: #495159;
+  font-weight: bold;
+  margin-top: -30px;
+  text-align: center;
+}
+
+/* aside */
+.aside {
+  background-color: #f3f4f5;
+}
+
+.profile header,
+.profile section h3 {
+  text-align: center;
+}
+
+.profile th {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.profile td {
+  padding-right: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+section {
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #495159;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  color: #a1e8cc;
+}
+
+figure img {
+  width: 190px;
+  border-radius: 50%;
+}
+
+/* responsive */
+@media screen and (min-width: 800px) {
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  nav a {
+    padding: 18px 30px;
+    font-size: 18px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 4;
+  }
+
+  .aside {
+    flex: 1;
+  }
+
+  .container-profile .logo img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .container-profile div.deskripsi {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 230px;
+  }
+
+  .card .header img {
+    height: 230px;
+  }
+
+  .container-contact a {
+    font-size: 16px;
+  }
+
+  .container-contact img {
+    width: 90px;
+    margin-top: 20px;
+  }
+
+  .container-contact .wa:hover,
+  .fb:hover,
+  .ig:hover {
+    transform: scale(1.12);
+    margin-top: -30px;
+  }
+
+  .aside {
+    /* margin-top: 70px; */
+    background-color: #fff;
+    border-left: 1px solid #495159;
+    padding-bottom: 0px;
+  }
+
+  .profile {
+    margin-top: 70px;
+  }
+
+  .profile td {
+    padding-right: 0px;
+  }
+
+  .profile th {
+    padding-right: 10px;
+  }
+}
