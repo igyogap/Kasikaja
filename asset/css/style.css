@@ -118,11 +118,11 @@ svg {
   overflow: hidden;
   margin: 20px;
   box-shadow: 3px 3px 5px 2px rgb(83, 76, 76);
-  width: 150px;
+  width: 110px;
 }
 
 .card .header img {
-  height: 150px;
+  height: 110px;
 }
 
 .card .nama-product {
@@ -223,7 +223,7 @@ figure img {
 }
 
 /* responsive */
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
   .container-nav {
     display: flex;
     justify-content: space-between;
